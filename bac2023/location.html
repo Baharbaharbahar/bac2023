@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="controles.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="location.php" method="post">
+        <fieldset>
+            <legend>Location d'un habit</legend>
+            <label for="">code habit</label>
+            <input type="text" id="code" name="code"><br>
+            <label for="">cin client</label>
+            <input type="text" id="cin" name="cin"><br>
+            <label for="duree">duree location</label>
+            <input type="text" name="duree" id="duree"> <br>
+            <input type="reset" value="Annuler" class="button">
+            <input type="submit" value="Louer" onclick="verif2()" class="button">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="controles.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="ajout.php" method="post">
+        <fieldset>
+            <legend>Ajput d'un habit </legend>
+            <label for="">Categorie </label>
+            <select name="categorie" id="categorie">
+                <option value="">selectionner une categorie </option>
+                <option value="1">robe de soite </option>
+                <option value="2">robe de mariée</option>
+                <option value="3">Caftan</option>
+                <option value="4">costume</option>
+                <option value="5">jebba</option>
+            </select> <br>
+            <label for="des" class="des">description</label>
+            <input type="text" name="des" id="des">
+            <label for="">taille</label>
+            <input type="radio" name="taille" id="s" value="s"><label for="">S</label>
+            <input type="radio" name="taille" id="m" value="m"><label for="">M</label>
+            <input type="radio" name="taille" id="l"value="l"><label for="">L</label>
+            <input type="radio" name="taille" id="xl" value="xl"><label for="">XL</label> <br>
+            <label for="prix" id="prix" class="prix">Prix location</label>
+            <input type="number" name="prix" id="prix">
+            <input type="reset" value="Annuler" class="button">
+            <input type="submit" value="Ajouter" onclick="verif1()"  class="button">
+
+        </fieldset>
+    </form>
+</body>
+</html>
